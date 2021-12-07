@@ -20,18 +20,18 @@ public class movimiento2 : MonoBehaviour
     {
         if (aux)
         {
-            if (Input.GetKeyDown("k"))
+            if (Input.GetKeyDown(KeyCode.Keypad8))
             {
                 rbd.AddForce(Vector2.up * f, ForceMode2D.Impulse);
             }
 
-            if (Input.GetKey("l"))
+            if (Input.GetKey(KeyCode.Keypad6))
             {
                 rbd.velocity = new Vector2(speed, rbd.velocity.y);
                 spitee.flipX = true;
             }
 
-            else if (Input.GetKey("j"))
+            else if (Input.GetKey(KeyCode.Keypad4))
             {
                 rbd.velocity = new Vector2(-speed, rbd.velocity.y);
                 spitee.flipX = false;
